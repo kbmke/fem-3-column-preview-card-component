@@ -1,0 +1,278 @@
+/* import font families */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* # Page Reset */
+
+/* <!-- from https://www.joshwcomeau.com/css/custom-css-reset/ --> */
+/* // page reset */
+/*
+
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  9. Create a root stacking context
+*/
+
+:root {
+  --brightOrange: hsl(31, 77%, 52%);
+  --sedanBG: hsl(31, 77%, 52%);
+  --button1txt: hsl(31, 77%, 52%);
+  --darkCyan: hsl(184, 100%, 22%);
+  --suvBG: hsl(184, 100%, 22%);
+  --button2txt: hsl(184, 100%, 22%);
+  --veryDarkCyan: hsl(179, 100%, 13%);
+  --luxuryBG: hsl(179, 100%, 13%);
+  --button3txt: hsl(179, 100%, 13%);
+
+  --para: hsla(0, 0%, 100%, 0.75);
+  /* Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75) */
+  --bg: hsl(0, 0%, 95%);
+  --heading: hsl(0, 0%, 95%);
+  --buttonColor: hsl(0, 0%, 95%);
+  /* Very light gray (background, headings, buttons): hsl(0, 0%, 95%) */
+  font-size: 15px;
+
+}
+
+__next {
+
+  isolation: isolate;
+}
+
+.rel {
+  position: relative;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 769px) {
+
+  /* ABOVE CHANGES SETTINGS AT 375px SCREEN SIZE TO 769px SCREEN SIZE*/
+  #everything-box {
+    display: flex;
+    border: 2px solid yellowgreen;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .card {
+    width: px;
+    display: flex;
+    margin: 0px auto;
+    padding: 0 50px;
+     }
+
+  .card-heading {
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--heading);
+    font-size: 45px;
+    padding: 20px 0;
+  }
+
+  .para {
+    /* padding: 25px 30px; */
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--para);
+    font-size: 13px;
+    padding-bottom: 35px;
+  }
+
+  .card1 {
+    background-color: var(--sedanBG);
+    margin-top: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+         .button1 {
+      color: var(--button1txt);
+         }
+
+  .card2 {
+    background-color: var(--suvBG);
+  }
+         .button2 {
+      color: var(--button2txt);
+         }
+
+  .card3 {
+    background-color: var(--luxuryBG);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+   .button3 {
+      color: var(--button3txt);
+         }
+  .icon {
+  padding-top: 35px;
+  }
+
+  .button {
+  border-radius: 20px;
+  border: none;
+padding: 9px;
+width: 125px;
+    font-family: 'Lexend Deca', sans-serif;
+  /* display: flex; */
+  margin-bottom: 40px;
+
+ }
+
+  }
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1440px) {
+
+     /* ABOVE CHANGES SETTINGS AT 768px SCREEN SIZE TO 1023px SCREEN SIZE*/
+
+    #everything-box {
+        width: 65%;
+        height: 82%;
+    display: flex;
+      flex-direction: row;
+    margin: 0 auto;
+  }
+
+  .card {
+      margin: 100px auto;
+    padding: 0 50px;
+     }
+
+  .card-heading {
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--heading);
+    font-size: 45px;
+    padding: 16px 0;
+  }
+
+  .para {
+    padding: 8px 0;
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--para);
+    font-size: 13px;
+    padding-bottom: 50px;
+  }
+
+  .card1 {
+    background-color: var(--sedanBG);
+      border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+         .button1 {
+      color: var(--button1txt);
+         }
+
+  .card2 {
+    background-color: var(--suvBG);
+  }
+         .button2 {
+      color: var(--button2txt);
+         }
+
+  .card3 {
+    background-color: var(--luxuryBG);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+   .button3 {
+      color: var(--button3txt);
+         }
+  .icon {
+  padding-top: 40px;
+  }
+
+  .button {
+  border-radius: 20px;
+  border: none;
+padding: 9px;
+width: 125px;
+    font-family: 'Lexend Deca', sans-serif;
+  /* display: flex; */
+  margin-bottom: 40px;
+
+ }
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
