@@ -1,16 +1,20 @@
+/** @format */
+
 :root {
-  sedan: hsl(31, 77%, 52%);
-suv: hsl(184, 100%, 22%);
-luxury: hsl(179, 100%, 13%);
-Transparent-white (paragraphs): hsla(0, 0%, 100%, 0.75);
-Very-light-gray: (background, headings, buttons): hsl(0, 0%, 95%);
-font-size: 15px;
+  --sedan: hsl(31, 77%, 52%);
+  --suv: hsl(184, 100%, 22%);
+  --luxury: hsl(179, 100%, 13%);
+  --para: hsla(0, 0%, 100%, 0.75);
+  --background: hsl(0, 0%, 95%);
+  --heading: hsl(0, 0%, 95%);
+  --button: hsl(0, 0%, 95%);
+  font-size: 15px;
 }
 
 // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 100 to 900
 
-.big-shoulders-display-<uniquifier> {
+.big-shoulders-display-<uniquifier > {
   font-family: "Big Shoulders Display", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
@@ -20,10 +24,25 @@ font-size: 15px;
 // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 100 to 900
 
-.lexend-deca-<uniquifier> {
+.lexend-deca-<uniquifier > {
   font-family: "Lexend Deca", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
 }
 
+body {
+  background-color: var(--background);
+}
+
+.sedan {
+  background-color: var(--sedan);
+}
+
+.suv {
+  background-color: var(--suv);
+}
+
+.luxury {
+  background-color: var(--luxury);
+}
