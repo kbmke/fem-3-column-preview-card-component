@@ -24,6 +24,7 @@ body {
 .model {
   width: 22rem;
   padding: 4rem;
+  color: var(--para);
 }
 
 h1 {
