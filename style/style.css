@@ -22,6 +22,7 @@ body {
 }
 
 .model {
+  font-family: "Big Shoulders Display", sans-serif;
   width: 22rem;
   padding: 4rem;
   color: var(--para);
