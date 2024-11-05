@@ -1,0 +1,78 @@
+/** @format */
+
+:root {
+  --sedan: hsl(31, 77%, 52%);
+  --suv: hsl(184, 100%, 22%);
+  --luxury: hsl(179, 100%, 13%);
+  --para: hsla(0, 0%, 100%, 0.75);
+  --background: hsl(0, 0%, 95%);
+  --heading: hsl(0, 0%, 95%);
+  --button: hsl(0, 0%, 95%);
+  font-size: 15px;
+}
+
+body {
+  background-color: var(--background);
+}
+
+.card {
+  width: 66rem;
+  display: flex;
+  margin: 6rem auto;
+}
+
+.model {
+  width: 22rem;
+  padding: 4rem;
+  color: var(--para);
+}
+
+h1 {
+  color: var(--heading);
+  font-family: "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 1.8rem 0;
+}
+
+p {
+  padding: 0 0 6rem 0;
+  color: var(--para);
+  font-size: 1rem;
+  line-height: 1.7rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+.sedan {
+  background-color: var(--sedan);
+  border-top-left-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
+}
+
+.sedan-button {
+  color: var(--sedan);
+}
+.suv {
+  background-color: var(--suv);
+}
+.suv-button {
+  color: var(--suv);
+}
+.luxury {
+  border-top-right-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+  background-color: var(--luxury);
+}
+.luxury-button {
+  color: var(--luxury);
+}
+button {
+  background-color: var(--button);
+  border-radius: 1.5rem;
+  padding: 1rem;
+  font-size: 1rem;
+  width: 9rem;
+  font-weight: 400;
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+}
