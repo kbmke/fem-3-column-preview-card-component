@@ -48,6 +48,7 @@ p {
   background-color: var(--sedan);
   border-top-left-radius: 0.8rem;
   border-bottom-left-radius: 0.8rem;
+  color: var(--para);
 }
 
 .sedan-button {
@@ -55,6 +56,7 @@ p {
 }
 .suv {
   background-color: var(--suv);
+  color: var(--para);
 }
 .suv-button {
   color: var(--suv);
@@ -63,6 +65,7 @@ p {
   border-top-right-radius: 0.8rem;
   border-bottom-right-radius: 0.8rem;
   background-color: var(--luxury);
+  color: var(--para);
 }
 .luxury-button {
   color: var(--luxury);
